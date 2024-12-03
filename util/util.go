@@ -32,11 +32,11 @@ func ReadInputLines(path string) ([]string, error) {
 	return lines, scanner.Err()
 }
 
-func MakeSumMap(list []int) map[int]int {
+func CountedListMap(list []int) map[int]int {
 	intMap := make(map[int]int)
 	for _, val := range list {
 		valTotal := intMap[val]
-		valTotal += val
+		valTotal += 1
 		intMap[val] = valTotal
 	}
 	return intMap

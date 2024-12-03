@@ -1,4 +1,4 @@
-package day1
+package day2
 
 import (
 	"github.com/zorndorff/2024-advent-code/util"
